@@ -12,13 +12,13 @@
  
  <property>
     <name>javax.jdo.option.ConnectionUserName</name>
-    <value><%= node['mapr']['mysql_user'] %></value>
+    <value><%= @mysql_user %></value>
     <description>username to use against metastore database</description>
  </property>
  
  <property>
     <name>javax.jdo.option.ConnectionPassword</name>
-    <value><%= node['mapr']['mysql_pw'] %></value>
+    <value><%= @mysql_password %></value>
     <description>password to use against metastore database</description>
  </property>
  

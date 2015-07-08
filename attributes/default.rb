@@ -9,8 +9,6 @@ default['mapr']['hive_version'] = '0.13'
 default['mapr']['hive_metastore_server'] = '10.84.102.220'
 
 default['mapr']['mysql_server'] = '10.84.100.229'
-default['mapr']['mysql_user'] = 'hiveserver'
-default['mapr']['mysql_pw'] = 'password'
 
 default['mapr']['home'] = '/opt/mapr'
 default['mapr']['hive_dir'] = '/opt/mapr/hive/0.13/conf/'

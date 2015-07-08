@@ -17,7 +17,12 @@ directory node['mapr']['hive_dir'] do
   action :create
 end
 
+data = data_bag_item( 'mapr_hive', 'hive' )
+
 template "#{node['mapr']['hive_dir']}hive-site.xml" do
+  variables( 
+    :mysql_password => data['mysql_password'],
+    :mysql_user => data['mysql_user'] )
   source 'hive_site.conf.erb'
   mode 0644
   action :create
