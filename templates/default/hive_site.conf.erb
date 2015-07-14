@@ -1,4 +1,4 @@
-<configure>
+<configuration>
 <property>
     <name>javax.jdo.option.ConnectionURL</name>
     <value>jdbc:mysql://<%= node['mapr']['mysql_server'] %>:3306/hive?createDatabaseIfNotExist=true</value>
@@ -27,4 +27,4 @@
     <name>hive.metastore.uris</name>
     <value>thrift://<%= node['mapr']['hive_metastore_server'] %>:9083</value>
  </property>
-</configure>
+</configuration>
